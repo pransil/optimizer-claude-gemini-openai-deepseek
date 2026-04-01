@@ -2,7 +2,11 @@
 
 An iterative ML optimization framework that uses Claude to propose and refine PyTorch training pipelines, with a panel of AI critics (GPT-4, Gemini, DeepSeek) providing feedback between iterations.
 
-The real purpose is to experiment with iterative optimization where different ai sysems look at a goal, propose, critique, and refine a solution, build, runa and test the solution, then repeat the process. There should be 'human in the loop' check-point opportunities that can be used or bypassed as desired. I expect them to be used a lot in the begining and less as confidence in the system grows. The most interesting checkpoint is where you see a summary of the proposal, all the critiques, and how this input is used to change the solution. It is also interesting to see how a review of the results gets factored into the design for the next iteration. 
+The real purpose is to experiment with iterative optimization where different ai sysems look at a goal, propose, critique, and refine a solution, build, runa
+ and test the solution, then repeat the process. There should be 'human in the loop' check-point opportunities that can be used or bypassed as desired. I expect them to be used a lot in the begining and less as confidence in the system grows. The most interesting checkpoint is where you see a summary of the proposal, all the critiques, and how this input is used to change the solution. It is also interesting to see how a review of the results gets factored into the design for the next iteration. 
+
+Future versions will look at goals with multiple competing requirements and possibly metrics that are less well specified, givng the system more freedom in how it decides to achieve the overall goal.
+
 ## How It Works
 
 Each optimization cycle follows this flow:
